@@ -28,7 +28,10 @@ public class UI extends javax.swing.JFrame {
 
         background = new javax.swing.JPanel();
         navBar = new javax.swing.JPanel();
+        search = new javax.swing.JLabel();
         exit = new javax.swing.JLabel();
+        add = new javax.swing.JLabel();
+        edit = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -37,6 +40,8 @@ public class UI extends javax.swing.JFrame {
 
         navBar.setBackground(new java.awt.Color(60, 72, 84));
 
+        search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
+
         exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/exit.png"))); // NOI18N
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -44,19 +49,36 @@ public class UI extends javax.swing.JFrame {
             }
         });
 
+        add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/add.png"))); // NOI18N
+
+        edit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/edit.png"))); // NOI18N
+
         javax.swing.GroupLayout navBarLayout = new javax.swing.GroupLayout(navBar);
         navBar.setLayout(navBarLayout);
         navBarLayout.setHorizontalGroup(
             navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, navBarLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(navBarLayout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(add)
+                .addGap(86, 86, 86)
+                .addComponent(search)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(edit)
+                .addGap(82, 82, 82)
                 .addComponent(exit))
         );
         navBarLayout.setVerticalGroup(
             navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(navBarLayout.createSequentialGroup()
-                .addComponent(exit)
-                .addGap(0, 59, Short.MAX_VALUE))
+                .addGroup(navBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(exit))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(navBarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(edit)
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         jPanel1.setBackground(new java.awt.Color(60, 72, 84));
@@ -69,7 +91,7 @@ public class UI extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 457, Short.MAX_VALUE)
+            .addGap(0, 484, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
@@ -142,9 +164,12 @@ public class UI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel add;
     private javax.swing.JPanel background;
+    private javax.swing.JLabel edit;
     private javax.swing.JLabel exit;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel navBar;
+    private javax.swing.JLabel search;
     // End of variables declaration//GEN-END:variables
 }
