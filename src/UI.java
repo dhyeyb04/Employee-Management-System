@@ -41,6 +41,14 @@ public class UI extends javax.swing.JFrame {
         navBar.setBackground(new java.awt.Color(60, 72, 84));
 
         search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
+        search.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                searchMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                searchMousePressed(evt);
+            }
+        });
 
         exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/exit.png"))); // NOI18N
         exit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -50,8 +58,18 @@ public class UI extends javax.swing.JFrame {
         });
 
         add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/add.png"))); // NOI18N
+        add.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addMouseClicked(evt);
+            }
+        });
 
         edit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/edit.png"))); // NOI18N
+        edit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                editMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout navBarLayout = new javax.swing.GroupLayout(navBar);
         navBar.setLayout(navBarLayout);
@@ -127,6 +145,22 @@ public class UI extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_exitMouseClicked
+
+    private void addMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addMouseClicked
+
+    private void searchMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchMousePressed
+
+    private void searchMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_searchMouseClicked
+
+    private void editMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_editMouseClicked
 
     /**
      * @param args the command line arguments

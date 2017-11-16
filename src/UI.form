@@ -105,6 +105,10 @@
                   <Image iconType="3" name="/Icons/search.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="searchMouseClicked"/>
+                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="searchMousePressed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="exit">
               <Properties>
@@ -122,6 +126,9 @@
                   <Image iconType="3" name="/Icons/add.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="addMouseClicked"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="edit">
               <Properties>
@@ -129,6 +136,9 @@
                   <Image iconType="3" name="/Icons/edit.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="editMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
